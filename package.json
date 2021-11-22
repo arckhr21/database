@@ -3,15 +3,41 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    
+   "dev": "webpack --mode development",
+   "build":"webpack --mode production"
+    
+
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arckhr21/database.git"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^4.5.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/arckhr21/database/issues"
+  },
+  "homepage": "https://github.com/arckhr21/database#readme",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^6.0.1"
   }
 }
