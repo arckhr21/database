@@ -4,13 +4,15 @@ const path = require('path');
 //const mergeConfig = (mode) => require(`./builder/webpack.${mode}.js`)();
 //const mergeConfig = (mode) => require(`./builder/webpack.${mode}.js`)();
 
-module.exports = {
-   
+module.exports = () => {
+    return { 
         mode: 'none',
         entry: './src/index.js',
         output: {
             filename: 'main.js',
-            path: path.resolve(__dirname, 'dist'),
+            path: path.resolve(__dirname, 'build'),
         },
+    };
+       
         
 };

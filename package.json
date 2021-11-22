@@ -5,13 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack",
+    "webpack": "webpack"
     
-   "dev": "webpack --mode development",
-   "build":"webpack --mode production"
-    
-
-   },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arckhr21/database.git"
