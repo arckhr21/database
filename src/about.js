@@ -5,6 +5,7 @@
 module.exports = () => {
     // console.log("obj?.message");
     console.log("Webpack works great!");
+    console.log("Server watch");
 
    
 }; 
