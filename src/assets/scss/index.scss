@@ -1,0 +1,44 @@
+@import "./_normalize";
+@import "./vars";
+@import "./_mixins";
+
+body {
+    background-color: burlywood;
+}
+
+a {
+    color: $linkColor;
+    font-size: 1 rem;
+
+    span {
+        border-bottom: 1px solid $linkColor;
+    }
+}
+
+h1 {
+    // font-size: $h1Size;
+    @include title(2rem, 700, 10,5);
+    @include respondTo(768px, 992px) {
+        font-size: 3rem;
+    };
+    @include respondTo(993px, 1024px) {
+        font-size: 3.2rem;
+    };
+}
+
+h2 {
+    @include title(1.5rem, 400, 20,15);
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.block1 {
+    @extend %flex-center;
+    background-color: blue;
+}
+
