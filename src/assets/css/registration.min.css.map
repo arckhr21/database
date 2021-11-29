@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,AAAC,CACV,gBAAgB,CAAC,OAAiB,CACrC",
+    "sources": [
+        "../scss/registration.scss"
+    ],
+    "names": [],
+    "file": "registration.min.css"
+}

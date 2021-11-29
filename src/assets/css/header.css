@@ -1,0 +1,8 @@
+.header {
+  padding: 1rem;
+  border-radius: 10px;
+  grid-area: header;
+  background-color: blueviolet;
+  height: 50px;
+}
+/*# sourceMappingURL=header.css.map */

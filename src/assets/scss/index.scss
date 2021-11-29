@@ -1,19 +1,28 @@
 @import "./_normalize";
 @import "./vars";
 @import "./_mixins";
+@import "./header";
+@import "./footer";
+@import "./aside";
+@import "./calendar";
+@import "./registration";
 
+html,
 body {
     background-color: burlywood;
 }
 
-a {
-    color: $linkColor;
-    font-size: 1 rem;
+.container {
+    display: grid;
+    gap: 10px 20px;
 
-    span {
-        border-bottom: 1px solid $linkColor;
-    }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'header header header'
+    'calendar registration aside'
+    'footer footer footer';
 }
+
 
 h1 {
     // font-size: $h1Size;
@@ -26,9 +35,9 @@ h1 {
     };
 }
 
-h2 {
-    @include title(1.5rem, 400, 20,15);
-}
+// h2 {
+//     @include title(1.5rem, 400, 20,15);
+// }
 
 %flex-center {
     display: flex;

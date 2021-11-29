@@ -1,0 +1,16 @@
+.calendar {
+  display: -ms-grid;
+  display: grid;
+  background-color: #c5c5e6;
+  -ms-grid-columns: (50px)[7];
+      grid-template-columns: repeat(7, 50px);
+  -ms-grid-rows: (50px)[7];
+      grid-template-rows: repeat(7, 50px);
+}
+
+.calendar_item {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=calendar.css.map */
