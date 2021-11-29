@@ -1,53 +1,56 @@
-@import "./_normalize";
-@import "./vars";
-@import "./_mixins";
+//@import "./_normalize";
+//@import "./vars";
+//@import "./_mixins";
 @import "./header";
 @import "./footer";
 @import "./aside";
 @import "./calendar";
 @import "./registration";
 
-html,
 body {
     background-color: burlywood;
+    //min-height: 100vh;
 }
 
 .container {
     display: grid;
-    gap: 10px 20px;
+    //gap: 5px 10px;
+    gap: 5px;
+    min-height: 100vh;
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     'header header header'
     'calendar registration aside'
     'footer footer footer';
+    //justify-items: center;
 }
 
 
-h1 {
-    // font-size: $h1Size;
-    @include title(2rem, 700, 10,5);
-    @include respondTo(768px, 992px) {
-        font-size: 3rem;
-    };
-    @include respondTo(993px, 1024px) {
-        font-size: 3.2rem;
-    };
-}
-
-// h2 {
-//     @include title(1.5rem, 400, 20,15);
+// h1 {
+//     // font-size: $h1Size;
+//     @include title(2rem, 700, 10,5);
+//     @include respondTo(768px, 992px) {
+//         font-size: 3rem;
+//     };
+//     @include respondTo(993px, 1024px) {
+//         font-size: 3.2rem;
+//     };
 // }
 
-%flex-center {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
+// // h2 {
+// //     @include title(1.5rem, 400, 20,15);
+// // }
 
-.block1 {
-    @extend %flex-center;
-    background-color: blue;
-}
+// %flex-center {
+//     display: flex;
+//     justify-content: center;
+//     align-content: center;
+//     align-items: center;
+// }
+
+// .block1 {
+//     @extend %flex-center;
+//     background-color: blue;
+// }
 

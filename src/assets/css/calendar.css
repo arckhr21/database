@@ -2,10 +2,14 @@
   display: -ms-grid;
   display: grid;
   background-color: #c5c5e6;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: start;
+      align-self: start;
   -ms-grid-columns: (50px)[7];
       grid-template-columns: repeat(7, 50px);
-  -ms-grid-rows: (50px)[7];
-      grid-template-rows: repeat(7, 50px);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
 .calendar_item {

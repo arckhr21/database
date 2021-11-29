@@ -1,6 +1,9 @@
 .aside {
   padding: 1rem;
   border-radius: 10px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   grid-area: aside;
   background-color: darkcyan;
 }

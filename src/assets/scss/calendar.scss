@@ -1,17 +1,16 @@
 .calendar {
     display: grid;
     background-color: rgb(197, 197, 230);
-    // gap: 25px;
-    // gap: 1rem;
-    
+    justify-self: center;
+    align-self: start;
+        
     grid-template-columns: repeat(7, 50px);
-    grid-template-rows: repeat(7, 50px);
+    grid-template-rows: auto;
    
 }
 
 .calendar_item {
     padding: 1rem;
     border-radius: 5px;
-    // 
     border: 1px solid black;
 }
