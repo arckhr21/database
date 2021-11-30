@@ -7,6 +7,10 @@
   grid-area: header;
   background-color: blueviolet;
   height: 50px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-columns: 300px 1fr 500px;
+      grid-template-rows: auto;
 }
 
 .footer {
@@ -22,6 +26,8 @@
 .aside {
   padding: 1rem;
   border-radius: 10px;
+  -ms-flex-item-align: start;
+      align-self: start;
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: aside;
@@ -62,10 +68,10 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  gap: 5px;
+  gap: 10px 20px;
   min-height: 100vh;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 380px 1fr 250px;
+      grid-template-columns: 380px 1fr 250px;
       grid-template-areas: 'header header header' 'calendar registration aside' 'footer footer footer';
 }
 /*# sourceMappingURL=index.css.map */

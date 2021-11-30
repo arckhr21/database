@@ -1,8 +1,30 @@
 .header {
+  margin: 5px;
   padding: 1rem;
   border-radius: 10px;
   grid-area: header;
   background-color: blueviolet;
   height: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr 500px;
+      grid-template-columns: 300px 1fr 500px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.header_photo {
+  background-color: cyan;
+  background: 1px solid blue;
+}
+
+.header_title {
+  background-color: #d1d6a2;
+  background: 1px solid #0b2b02;
+}
+
+.header_nav {
+  background-color: #eeb853;
+  background: 1px solid #0b2b02;
 }
 /*# sourceMappingURL=header.css.map */

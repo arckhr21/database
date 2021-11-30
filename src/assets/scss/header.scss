@@ -1,8 +1,28 @@
 .header {
+    margin: 5px;
     padding: 1rem;
     border-radius: 10px;
 
     grid-area: header;
     background-color: blueviolet;
     height: 50px;
+
+    display: grid;
+    grid-template-columns: 300px 1fr 500px ;
+    grid-template-rows: auto;
+}
+.header_photo {
+    background-color:cyan;
+    background: 1px solid blue;
+    // margin: 2,5px;
+}
+.header_title {
+    background-color:rgb(209, 214, 162);
+    background: 1px solid rgb(11, 43, 2);
+    // margin: 2,5px;
+}
+.header_nav {
+    background-color:rgb(238, 184, 83);
+    background: 1px solid rgb(11, 43, 2);
+    // margin: 2,5px;
 }
