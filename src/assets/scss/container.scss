@@ -8,9 +8,7 @@
     grid-template-columns: 380px 1fr 250px;
     grid-template-areas: 
     'header header header'
-    'calendar registration aside'
-    'timetable timetable timetable'
-    
+    'content content content'
     'footer footer footer';
     //justify-items: center;
 }

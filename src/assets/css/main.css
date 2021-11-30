@@ -1,5 +1,5 @@
-.content {
-  grid-area: content;
+.main {
+  grid-area: main;
   background-color: #b2ecb0;
   display: -ms-grid;
   display: grid;
@@ -8,4 +8,4 @@
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
-/*# sourceMappingURL=content.css.map */
+/*# sourceMappingURL=main.css.map */

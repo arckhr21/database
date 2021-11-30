@@ -5,7 +5,7 @@
   min-height: 100vh;
   -ms-grid-columns: 380px 1fr 250px;
       grid-template-columns: 380px 1fr 250px;
-      grid-template-areas: 'header header header' 'calendar registration aside' 'timetable timetable timetable' 'footer footer footer';
+      grid-template-areas: 'header header header' 'content content content' 'footer footer footer';
 }
 
 .header {
@@ -53,10 +53,24 @@
   background: 1px solid #0b2b02;
 }
 
+.content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: content;
+  background-color: #b2ecb0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 380px 1fr 150px;
+      grid-template-columns: 380px 1fr 150px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
 .footer {
   padding: 1rem;
   border-radius: 10px;
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
@@ -64,15 +78,6 @@
 }
 
 .aside {
-  margin-right: 5px;
-  padding: 1rem;
-  border-radius: 10px;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: aside;
   background-color: darkcyan;
 }
 
@@ -98,12 +103,9 @@
 
 .registration {
   background-color: #d21ea5;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
 }
 
-.taimetable {
+.timetable {
   background-color: darkgray;
 }
 
