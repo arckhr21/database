@@ -1,31 +1,20 @@
 //@import "./_normalize";
 //@import "./vars";
 //@import "./_mixins";
+@import "./container";
 @import "./header";
 @import "./footer";
 @import "./aside";
 @import "./calendar";
 @import "./registration";
+@import "./timetable";
 
 body {
     background-color: burlywood;
     //min-height: 100vh;
 }
 
-.container {
-    display: grid;
-    //gap: 5px 10px;
-    gap: 10px 20px;
-    min-height: 100vh;
 
-    //grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: 380px 1fr 250px;
-    grid-template-areas: 
-    'header header header'
-    'calendar registration aside'
-    'footer footer footer';
-    //justify-items: center;
-}
 
 
 // h1 {
