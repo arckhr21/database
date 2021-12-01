@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,gBAAgB,EAAC,QAAQ;CAC5B",
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,gBAAgB,EAAC,QAAQ;EACzB,WAAW,EAAE,QAAQ;EACrB,MAAM,EAAE,KAAK;CAChB",
     "sources": [
         "../scss/timetable.scss"
     ],

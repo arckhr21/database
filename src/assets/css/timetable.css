@@ -1,4 +1,8 @@
 .content_timetable {
   background-color: darkgray;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/span 3;
+  height: 300px;
 }
 /*# sourceMappingURL=timetable.css.map */
