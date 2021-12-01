@@ -1,5 +1,44 @@
-.content_timetable {
+// .content_timetable {
+//     background-color:darkgray;
+//     grid-column: 1/span 3;
+//     height: 300px;
+// }
+.timetable {
     background-color:darkgray;
     grid-column: 1/span 3;
-    height: 300px;
+    //height: 300px;
+
+}
+.content_timetable {
+    display: grid;
+
+    grid-template-columns: repeat(12, 70px);
+    grid-template-rows: auto;
+}
+.item_content_timetable {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.item_content_timetable:nth-child(1) {
+    grid-column: 1/span 12;
+}
+.item_content_timetable:nth-child(14) {
+    grid-column: 1/span 12;
+}
+.item_content_timetable:nth-child(27) {
+    grid-column: 1/span 12;
+}
+.item_content_timetable:nth-child(40) {
+    grid-column: 1/span 12;
+}
+.item_content_timetable:nth-child(53) {
+    grid-column: 1/span 12;
+}
+.item_content_timetable:nth-child(66) {
+    grid-column: 1/span 12;
+}
+.item_content_timetable:nth-child(79) {
+    grid-column: 1/span 12;
 }
