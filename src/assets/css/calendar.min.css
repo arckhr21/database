@@ -1,2 +1,0 @@
-.calendar{display:-ms-grid;display:grid;background-color:#c5c5e6;-ms-grid-column-align:center;justify-self:center;-ms-grid-row-align:start;align-self:start;-ms-grid-columns:(50px)[7];grid-template-columns:repeat(7, 50px);-ms-grid-rows:auto auto;grid-template-rows:auto auto}.calendar_item{padding:1rem;border-radius:5px;border:1px solid black}.calendar_item:nth-child(1){-ms-grid-column:1;-ms-grid-column-span:7;grid-column:1/span 7}
-/*# sourceMappingURL=calendar.min.css.map */

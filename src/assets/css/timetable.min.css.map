@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,kBAAkB,AAAC,CACf,gBAAgB,CAAC,QAAQ,CACzB,WAAW,CAAE,QAAQ,CACrB,MAAM,CAAE,KAAK,CAChB",
-    "sources": [
-        "../scss/timetable.scss"
-    ],
-    "names": [],
-    "file": "timetable.min.css"
-}

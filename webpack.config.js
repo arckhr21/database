@@ -4,6 +4,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
+//const CopyPlugin = require("copy-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -11,6 +12,7 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
   entry: "./src/index.js",
+  
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -20,16 +22,30 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+     template: "index.html",
+     
     }),
 
     new MiniCssExtractPlugin(),
+
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, './src/assets/img'),
+    //       to: path.resolve(__dirname, 'dist/img') 
+    //     }
+    //   ]
+    // })
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
   module: {
     rules: [
+      {
+        test: /\.html$/,
+        use: 'html-loader',
+      },
       {
         test: /\.(js|jsx)$/i,
         loader: "babel-loader",
