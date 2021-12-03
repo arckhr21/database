@@ -1,5 +1,5 @@
 //@import "./_normalize";
-//@import "./vars";
+@import "./__vars";
 //@import "./_mixins";
 @import "./container";
 @import "./header";
@@ -14,8 +14,8 @@
 @import "./aboutmyself";
 
 body {
-    background-color: burlywood;
-    //min-height: 100vh;
+    background-color: #fff;
+    //font-size: 10px;
 }
 
 
