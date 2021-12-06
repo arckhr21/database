@@ -1,0 +1,164 @@
+//mobil
+@media (max-width: 425px){
+       
+    .container {
+        display: grid;
+        min-height: 100vh;
+         width: 400px;
+
+        grid-template-columns: repeat(3, 1fr);
+ 
+        .header {
+            grid-column: 1/2;
+            grid-row: 1/2;
+           
+            width: 380px;
+            display: grid;
+ 
+            grid-template-columns: 50px minmax(230px, 1fr);
+
+            .header_photo {
+                display: block;
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            .header_nav {
+                display: none;
+            }
+            .header_title {
+                background-color:$headerBackground;
+                align-self: center;
+                grid-column: 2/3;
+                
+                grid-row: 1/2;
+
+                .content_header_title {
+                    color:$headerTitleColor;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    text-shadow: saddlebrown 5px 7px 5px;
+                }
+            }
+            
+        } //end header
+
+        .content {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background-color:rgb(178, 236, 176); 
+
+            width: 390px;
+        
+            display: grid;
+            grid-template-columns: repeat(7, 400px);
+
+            // calendar
+            .calendar {
+                grid-column: 1/2;
+                grid-row: 1/2;
+
+                display: grid;
+            
+                justify-self: start;
+                align-self: start;
+                    
+                grid-template-columns: repeat(7, 55px);
+                grid-template-rows: auto;
+
+                .calendar_item {
+                    padding: 1rem;
+                    border-radius: 5px;
+                    border: 1px solid black;
+                }
+                .calendar_item:nth-child(1) {
+                    grid-column: 1/span 7;
+                }
+                
+            } // end calendar
+
+            //timetable
+            .timetable {
+                background-color: #fff;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                width: 390px;
+
+                .content_timetable {
+                    display: grid;
+                
+                    grid-template-columns: repeat(5, 75px);
+                    grid-template-rows: auto;
+
+                    .item_content_timetable {
+                        padding: 1rem;
+                        border-radius: 5px;
+                        border: 1px solid black;
+                    }
+                    .item_content_timetable:nth-child(1) {
+                        grid-column: 1/span 5;
+                    }
+                    .item_content_timetable:nth-child(14) {
+                        grid-column: 1/span 5;
+                    }
+                    .item_content_timetable:nth-child(27) {
+                        grid-column: 1/span 5;
+                    }
+                    .item_content_timetable:nth-child(40) {
+                        grid-column: 1/span 5;
+                    }
+                    .item_content_timetable:nth-child(53) {
+                        grid-column: 1/span 5;
+                    }
+                    .item_content_timetable:nth-child(66) {
+                        grid-column: 1/span 5;
+                    }
+                    .item_content_timetable:nth-child(79) {
+                        grid-column: 1/span 5;
+                    }
+
+                } // end conent_timetable
+        
+            } // end nimetable
+
+            .registration {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                width: 390px;
+                border-radius: 5px;
+            }
+            .clients {
+                grid-column: 1/2;
+                grid-row: 5/6;
+                width: 390px;
+                border-radius: 5px;
+            }
+            .galery {
+                grid-column: 1/2;
+                grid-row: 6/7;
+                width: 390px;
+                border-radius: 5px;
+            }
+            .aside {
+                grid-column: 1/2;
+                grid-row: 7/8;
+                width: 390px;
+                border-radius: 5px;
+            }
+            .about_myself {
+                grid-column: 1/2;
+                grid-row: 8/9;
+                width: 390px;
+                border-radius: 5px;
+            }
+        } // end content
+
+        .footer {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            width: 360px;
+        } // end footer
+            
+    } //end container
+
+} // end media_mobil
+        

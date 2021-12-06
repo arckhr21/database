@@ -52,17 +52,4 @@
     color: $navHoverTextColor;
 } 
 
-@media (max-width: 320px){
-    .header_photo {
-        display: block;
-    }
-    .header_nav {
-        display: none;
-    }
-    .header_title {
-        background-color:$headerBackground;
-        text-align: start;
-        grid-column: 1/2;
-    }
 
- }
