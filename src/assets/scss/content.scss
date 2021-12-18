@@ -2,12 +2,13 @@
     // определяем область content
     grid-column: 1/2;
     grid-row: 2/3;
-    //background-color: gray; 
+    align-self: start;
+    //height: 63vh;
 
     // разделяем content на 3 колонки
     // calendar, timetable, menu (aside)
     display: grid;
-    grid-template-columns: 355px 3fr 1fr;
+    grid-template-columns: 355px 4fr 1fr;
     grid-template-rows: auto;
     gap: 5px 5px;
 }

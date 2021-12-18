@@ -3,7 +3,26 @@
     grid-column: 3/4;
     grid-row: 1/2;
     
-    margin-right: 8px;
     border-radius: 5px;
-    background-color:darkcyan;
+    border: 1px solid $asideBorderColor ;
+
+    display: grid;
+
+    .aside_nav {
+        grid-column: 1/2;
+        grid-row: auto;
+
+        display: grid;
+        grid-template-columns: minmax(40px, 1fr);
+        grid-template-rows: 40px 40px 40px;
+
+        .item_aside_nav {
+            grid-column: 1/2;
+          
+        }
+    }
+
+    color: $asideTextColor;
+    padding: 10px;
+    font-size: 1rem;
 }

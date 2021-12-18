@@ -1,19 +1,33 @@
 $linkColor: yellow;
 $h1Size: 2.5rem;
-//$headerBackground: rgb(104, 201, 168);
-$headerBackground: rgb(28, 31, 30);
+$headerBackground: white;
+//$headerBackground: rgb(28, 31, 30);
+
+$asideBorderColor: rgb(2, 115, 134);
+$asideTextColor: rgb(3, 80, 168);
+$asideBackgroundColor: #fff;
+
 $navColor: rgb(204, 240, 234);
 $asideNavColor: rgb(241, 121, 252);
 //$navHoverColor: rgb(145, 236, 236);
 $navHoverColor: darkcyan;
 $navHoverTextColor: #fff;
-$headerTitleColor: rgb(235, 231, 48);
-$headerTitleSize: 4vw;
+//$headerTitleColor: rgb(235, 231, 48);
+$headerTitleColor: rgb(20, 94, 233);
+
+// $headerTitleSize: 4vw;
+$headerTitleSize: 3vw;
 $headerTitleMobilSize: 8vw;
 //$asideBackground: rgb(192, 235, 238);
 $asideBackground: rgb(2, 87, 87);
 
-$calendarBorderColor: rgb(2, 87, 87);
-$timetableBorderColor: rgb(2, 87, 87);
-$calendarTextColor: rgb(2, 87, 87);
-$timetableTextColor: rgb(2, 87, 87);
+$calendarBorderColor: rgb(2, 115, 134);
+$timetableBorderColor: rgb(2, 115, 134);
+// $calendarBorderColor: rgb(6, 108, 224);
+// $timetableBorderColor: rgb(6, 108, 224);
+
+
+// $calendarTextColor: rgb(2, 87, 87);
+$calendarTextColor: rgb(3, 80, 168);
+$timetableTextColor: rgb(3, 80, 168);
+
