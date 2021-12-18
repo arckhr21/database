@@ -1,0 +1,53 @@
+
+.timetable_day {
+    //display: none;
+    //display: block; // проверка
+    //background-color:rgb(235, 222, 168);
+   // background: 2px solid #000;
+    
+    grid-column: 2/3; // определяем положение в середине content 
+    grid-row: 1/2;
+    //height: 16vh;
+        
+    //justify-self: center;
+    justify-self: start;
+    //align-self: center;
+    align-self: top;
+    border-radius: 5px;
+    background: 2px solid #000;
+
+    
+    
+    .item_timetable {
+        // border-radius: 5px;
+        // background: 2px solid #000;
+        
+        display: grid;
+            
+        grid-template-columns: minmax(40px, 1fr) 4fr;
+        grid-template-rows: auto;
+
+       
+        // содержимое таблицы
+        .item_timetable_time {
+           
+            grid-column: 1/2;
+            //grid-row: 1/2;
+            grid-row: auto;
+            //padding: 1rem;
+        //     padding: 5px;
+        //     background: 2px solid #000;
+        }
+        .item_timetable_content {
+            grid-column: 2/3;
+            //grid-row: 1/2;
+            grid-row: auto;
+            padding: 5px;
+            background: 2px solid #000;
+            // background: 2px solid #000;
+        }
+        
+       
+    } // end item_timetable
+
+} // end timetable_day

@@ -21,7 +21,7 @@
                 display: none;
             }
             .header_gamburger {
-                display: none;
+                display: block;
                 grid-column: 1/2;
                 grid-row: 1/2;
             }
@@ -37,7 +37,7 @@
 
                 .content_header_title {
                     color:$headerTitleColor;
-                    font-size: 1.2rem;
+                    font-size: 2rem;
                     font-weight: 700;
                     text-shadow: saddlebrown 5px 7px 5px;
                 }
@@ -60,9 +60,10 @@
             //calendar
             .calendar {
                 // grid-column: 1/2;
-                grid-column: 1/2;
+                grid-column: 1/3;
                 grid-row: 1/2;
 
+                width: 760px;
                 display: grid;
             
                 // justify-self: start;
@@ -86,7 +87,7 @@
 
             //timetable
             .timetable {
-                background-color:#a9a9a9;
+                background-color:#fff;
                 grid-column: 1/3;
                 //grid-column: 1/2;
                 grid-row: 3/4;
@@ -104,7 +105,7 @@
                     .item_content_timetable {
                         padding: 1rem;
                         border-radius: 5px;
-                        border: 1px solid black;
+                        border: 1px solid rgb(3, 12, 129);
                     }
                     .item_content_timetable:nth-child(1) {
                         grid-column: 1/span 5;
@@ -153,83 +154,18 @@
                 border-radius: 5px;
             }
             .aside {
-                grid-column: 2/3;
+                grid-column: 1/3;
                 
-                // grid-row: 7/8;
-                grid-row: 1/2;
-                width: 360px;
+                grid-row: 7/8;
+                //grid-row: 1/2;
+                width: 760px;
                 border-radius: 5px;
                 background-color: $asideBackground;
-               // margin-right: 15px;
-
-                .aside_nav {
-                    //display: none;
-                    display: grid;
-                    
-                    // grid-column: 1/2;
-                    grid-column: 2/3;
-                    // grid-row: 2/3;
-                    gap: 5px;
-                    //grid-template-columns: repeat(6, 1fr);
-                    grid-template-rows: repeat(6, minmax(50px, auto));
-                    //grid-template-rows: auto;
-                    //grid-auto-flow: column;
-                    
-                
-                    align-items: center;
-                    //justify-content: space-evenly;
-                   // justify-items: center;
-                    justify-items: end;
-                   
-                    background-color:$asideBackground;
-            
-                    .aside_nav_item {
-                        //background-color: $asideNavColor;
-                        //background-color: $navColor;
-                        padding-right: 0px;
-                        //text-align: start;
-                        text-align: center;
-                        border-radius: 5px;
-                        width: 150px;
-                        color: #fff;
-                        font-size: 1.5rem;
-                       
-                    }
-                    .aside_nav_item:hover {
-                        background-color: $navHoverColor;
-                        color: darkcyan;
-                    } 
-                    .aside_nav_main{
-                        grid-column: 1/2;
-                        grid-row: 1/2;
-                    }
-                    .aside_nav_timetable{
-                        grid-column: 1/2;
-                        grid-row: 2/3;
-                    }
-                    .aside_nav_clients{
-                        grid-column: 1/2;
-                        grid-row: 3/4;
-                    }
-                    .aside_nav_news{
-                        grid-column: 1/2;
-                        grid-row: 4/5;
-                    }
-                    .aside_nav_galery{
-                        grid-column: 1/2;
-                        grid-row: 5/6;
-                    }
-                    .aside_nav_about_myself{
-                        grid-column: 1/2;
-                        grid-row: 6/7;
-                    }
-
-                } // end aside_nav
-            } // aside
+              
+            } // end aside
             .about_myself {
                 grid-column: 1/3;
-                // grid-row: 8/9;
-                grid-row: 7/8;
+                grid-row: 8/9;
                 width: 760px;
                 border-radius: 5px;
             }
@@ -238,7 +174,7 @@
         .footer {
             grid-column: 1/2;
             grid-row: 3/4;
-            width: 760px;
+            width: 730px;
         } // end footer
             
     } //end container

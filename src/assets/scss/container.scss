@@ -1,14 +1,8 @@
+// Три основных блока друг под другом: header, content, footer
 .container {
     display: grid;
-    //gap: 5px 10px;
     gap: 5px 5px;
     min-height: 100vh;
 
-    //grid-template-columns: 380px 1fr 250px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    // grid-template-areas: 
-    // 'header header header'
-    // 'content content content'
-    // 'footer footer footer';
 } 
+

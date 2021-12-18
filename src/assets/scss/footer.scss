@@ -1,9 +1,14 @@
 .footer {
+    //display: none;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
 
     //grid-area: footer;
-    grid-column: 1/6;
+    //grid-column: 1/6;
+    grid-column: 1/2;
     grid-row: 3/4;
     background-color:chocolate;
+    //height: 20px;
+    //height: 5vh;
+    //align-self: end;
 }

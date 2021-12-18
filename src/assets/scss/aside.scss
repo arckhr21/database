@@ -1,4 +1,8 @@
 .aside {
+    //display: none; //проверка моб. окон
+    grid-column: 3/4;
+    grid-row: 1/2;
+    
     margin-right: 8px;
     border-radius: 5px;
     background-color:darkcyan;

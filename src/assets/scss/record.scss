@@ -1,0 +1,54 @@
+
+
+    .modal_record {
+        display: none; //проверка моб. окон
+        //display: grid;
+        gap: 10px 5px;
+        background-color:#fff;
+        border-radius: 5px;
+        justify-items: center;
+        grid-template-columns: 120px 250px;
+        grid-template-rows: auto;
+
+        .recordSurname {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .recordSurname_field {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .recordName {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .recordName_field {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .recordLastName {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .recordLastName_field {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .recordTel {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+        .registrationTel_field {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        
+        .recordSubmit_field {
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+
+    }
+
+
+
