@@ -82,53 +82,50 @@
                 <div class="timetable_day">
                     
                     <div class="item_timetable item_timetable_day">day</div> 
-                   
-                    <!-- <div class="item_timetable">  -->
-                       
-                            <!-- <div class="item_timetable item_timetable_time--1"> -->
+
                                 <div class="item_timetable item_timetable_time">8:00</div> 
                                 <div class="item_timetable item_timetable_content">cl1</div>
-                            <!-- </div>   -->
-                            <!-- <div class="item_timetable item_timetable_time--2"> -->
+
                                 <div class="item_timetable item_timetable_time">8:30</div> 
                                 <div class="item_timetable item_timetable_content">cl2</div>
-                            <!-- </div> -->
-                            <!-- <div class="item_timetable item_timetable_time--3"> -->
+
                                 <div class="item_timetable item_timetable_time">9:00</div> 
                                 <div class="item_timetable item_timetable_content">cl3</div>
-                            <!-- </div> -->
-                            <!-- <div class="item_timetable item_timetable_time--4"> -->
+
                                 <div class="item_timetable item_timetable_time">9:30</div> 
                                 <div class="item_timetable item_timetable_content">cl4</div>
-                            <!-- </div> -->
-                            <!-- <div class="item_timetable item_timetable_time--5"> -->
+
                                 <div class="item_timetable item_timetable_time">10:00</div> 
                                 <div class="item_timetable item_timetable_content">cl5</div>
-                            <!-- </div>  -->
-                            <!-- <div class="item_timetable item_timetable_time--6"> -->
+
                                 <div class="item_timetable item_timetable_time">10:30</div> 
                                 <div class="item_timetable item_timetable_content">cl6</div>
-                            <!-- </div>          -->
-                            <!-- <div class="item_timetable item_timetable_time--7"> -->
+
                                 <div class="item_timetable item_timetable_time">11:00</div> 
                                 <div class="item_timetable item_timetable_content">cl7</div>
-                            <!-- </div>   -->
-                            <!-- <div class="item_timetable item_timetable_time--8"> -->
+
                                 <div class="item_timetable item_timetable_time">11:30</div> 
                                 <div class="item_timetable item_timetable_content">cl8</div>
-                            <!-- </div>   -->
-                            <!-- <div class="item_timetable item_timetable_time--9"> -->
+
                                 <div class="item_timetable item_timetable_time">12:00</div> 
                                 <div class="item_timetable item_timetable_content">cl9</div>
-                            <!-- </div>   -->
-                            <!-- <div class="item_timetable item_timetable_time--10"> -->
+
                                 <div class="item_timetable item_timetable_time">12:30</div> 
                                 <div class="item_timetable item_timetable_content">cl10</div>
-                            <!-- </div>   -->
-                   <!-- </div> --> <!-- end item_timetable -->
+
                 </div> <!-- end timetable_day -->
 
-                <div class="modal modal_record">
+                <div class="aside">
+                    <div class="aside_nav">
+                        <div class="item_aside_nav aside_nav_list">Список пациентов</div>
+                        <div class="item_aside_nav aside_nav_timetable_7">Недельное расписание</div>
+                        <div class="item_aside_nav aside_nav_record">Запись</div>
+                    </div>
+                   
+                </div>
+
+                <!-- popup -->
+                <div class="popup popup_record">
                     <form class="record" action="#" method="post">
                             <div class="recordSurname">Фамилия</div>
                             <input class="record_field" id="recordSurname" type="text" placeholder="Фамилия">
@@ -144,20 +141,10 @@
 
                             <input class="recordSubmit_field" type="submit" value="Отправить">
                     </form>
-                </div> <!-- end modal_record -->
+                </div> <!-- end popup_record -->
 
-                <div class="aside">
-                    <div class="aside_nav">
-                        <div class="item_aside_nav aside_nav_list">Список пациентов</div>
-                        <div class="item_aside_nav aside_nav_timetable_7">Недельное расписание</div>
-                        <div class="item_aside_nav aside_nav_record">Запись</div>
-                    </div>
-                   
-                </div>
-            
-                <!-- <div class="content_timetable"> -->
-                <div class="modal modal_timetable">
-                    <div class="modal_timetable_title">
+                <div class="popup popup_timetable">
+                    <div class="popup_timetable_title">
                         Timetable
                     </div> 
                     <div class="content_timetable">
@@ -261,56 +248,31 @@
 
                     </div> <!-- end content_timetable -->
                     
-                </div> <!-- end timetable -->
+                </div> <!-- end popup_timetable -->
 
-                <!-- <div class="modal modal_timetable_day">
-                    
-                    <div class="item_timetable item_timetable_day">day</div> 
-                   
-                    <div class="item_timetable">  -->
-                       
-                           <!-- <div class="item_timetable item_timetable_time--1"> -->
-                                <!-- <div class="item_timetable item_timetable_time">8:00</div> 
-                                <div class="item_timetable item_timetable_content">cl1</div> -->
-                            <!-- </div>   -->
-                            <!-- <div class="item_timetable item_timetable_time--2"> -->
-                                <!-- <div class="item_timetable item_timetable_time">8:30</div> 
-                                <div class="item_timetable item_timetable_content">cl2</div> -->
-                            <!-- </div> -->
-                            <!-- <div class="item_timetable item_timetable_time--3"> -->
-                                <!-- <div class="item_timetable item_timetable_time">9:00</div> 
-                                <div class="item_timetable item_timetable_content">cl3</div> -->
-                            <!-- </div> -->
-                            <!-- <div class="item_timetable item_timetable_time--4"> -->
-                                <!-- <div class="item_timetable item_timetable_time">9:30</div> 
-                                <div class="item_timetable item_timetable_content">cl4</div> -->
-                            <!-- </div> -->
-                            <!-- <div class="item_timetable item_timetable_time--5"> -->
-                                <!-- <div class="item_timetable item_timetable_time">10:00</div> 
-                                <div class="item_timetable item_timetable_content">cl5</div> -->
-                            <!-- </div>  -->
-                            <!-- <div class="item_timetable item_timetable_time--6"> -->
-                                <!-- <div class="item_timetable item_timetable_time">10:30</div> 
-                                <div class="item_timetable item_timetable_content">cl6</div> -->
-                            <!-- </div>          -->
-                            <!-- <div class="item_timetable item_timetable_time--7"> -->
-                                <!-- <div class="item_timetable item_timetable_time">11:00</div> 
-                                <div class="item_timetable item_timetable_content">cl7</div> -->
-                            <!-- </div>   -->
-                            <!-- <div class="item_timetable item_timetable_time--8"> -->
-                                <!-- <div class="item_timetable item_timetable_time">11:30</div> 
-                                <div class="item_timetable item_timetable_content">cl8</div> -->
-                            <!-- </div>   -->
-                            <!-- <div class="item_timetable item_timetable_time--9"> -->
-                                <!-- <div class="item_timetable item_timetable_time">12:00</div> 
-                                <div class="item_timetable item_timetable_content">cl9</div> -->
-                            <!-- </div>   -->
-                            <!-- <div class="item_timetable item_timetable_time--10"> -->
-                                <!-- <div class="item_timetable item_timetable_time">12:30</div> 
-                                <div class="item_timetable item_timetable_content">cl10</div> -->
-                            <!-- </div>   -->
-                    <!--</div>--> <!-- end item_timetable -->
-                <!--</div>--> <!-- end timetable_day -->
+                <div class="popup popup_card">
+                    <div class="popup_card_title">Карта пациента</div>
+                    <div class="popup_card_surname">Фамилия</div>
+                    <div class="popup_card_name">Имя</div>
+                    <div class="popup_card_lastname">Отчество</div>
+                    <div class="popup_card_phone">Телефон</div>
+                    <div class="popup_card_history">
+                        <div class="popup_card_history_title">История лечения</div>
+                        <div class="popup_card_history_content"></div>
+                    </div>
+                </div> <!-- end popup_card -->
+
+                <div class="popup popup_list">
+                    <div class="popup_list_item">
+                        <div class="popup_list_title">Список пациентов</div>
+                        <div class="popup_list_id">id</div>
+                        <div class="popup_list_surname">Фамилия</div>
+                        <div class="popup_list_name">Имя</div>
+                        <div class="popup_list_lastname">Отчество</div>
+                        <div class="popup_list_phone">Телефон</div>
+                        <div class="popup_list_history">История лечения</div>
+                    </div>
+                </div>  <!-- end popup_list -->
 
             </div> <!-- end content -->
            

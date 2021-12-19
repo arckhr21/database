@@ -1,0 +1,9 @@
+.popup_list {
+    //display: none; //проверка моб. окон
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+    border-radius: 5px;
+    background-color: $listBackgroundColor;
+    border: 1px solid $listBorderColor;
+}
