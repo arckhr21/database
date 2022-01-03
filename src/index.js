@@ -6,6 +6,7 @@ import calendar from './calendar';
 //console.log("Hello World!");
 
 //about();
+calendar();
 
 
 
