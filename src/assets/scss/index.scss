@@ -9,14 +9,14 @@
 @import "./footer";
 @import "./aside";
 @import "./calendar";
-//@import "./record";
-//@import "./timetable";
+@import "./record";
+@import "./timetable";
 @import "./timetableday";
-//@import "./card.scss";
-//@import "./list.scss";
+@import "./card.scss";
+@import "./list.scss";
 
 
-body {
+// body {
    
        // background-color:rgb(105, 214, 196);
       // background-color:#aedbd4;
@@ -48,4 +48,7 @@ body {
         //     }
            
         // }
-} // end body
+// } // end body
+// .popup {
+//   display:none;
+// }
