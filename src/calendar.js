@@ -39,27 +39,39 @@ const calendar = () => {
 
     //определяем на какой день недели приходится 1-ое число месяца
     let dateFDW = new Date(curYear, curMonth, 1),
-        firstDayWeek = dateFDW.getDay();
-    console.log('первый день месяца ' + daysWeek[firstDayWeek -1]);
+        dayWeek = dateFDW.getDay();
+    console.log('первый день месяца ' + daysWeek[dayWeek -1]);
+    let inDayWeek = dayWeek -1; //индекс для  дня недели первого дня месяца
     
     if (!ci[0]) {             // проверка наличия динамической верстки
 
         console.log(ci[0]);
 
-        for (let i=0; i<=38; i++) {
+        // for (let i=0; i<=38; i++) {
+        for (let i=0; i<=(38+inDayWeek); i++) {
+
 
             calendDays[i] = document.createElement('div');
             calendDays[i].classList.add('calendar_item');
             
             if(i==0) {
-                //calendDays[i].innerHTML = 'month';
                 calendDays[i].innerHTML = allMonths[curMonth];
             } else if(i>0 && i<=7) {
                 calendDays[i].innerHTML = daysWeek[i-1];
             } else {
-                //определяем день начала месяца
-                //let startDay = 
-                calendDays[i].innerHTML = numDaysMonth[i-8];
+            //    if (i<8+dayWeek) {
+            //     calendDays[i].innerHTML = "";
+            //    } else {
+            //     calendDays[i].innerHTML = numDaysMonth[i-(8+dayWeek)];
+            //    }
+            if (i<(8+inDayWeek)) {
+                    calendDays[i].innerHTML = "";
+                   } else {
+                    calendDays[i].innerHTML = numDaysMonth[i-(8+inDayWeek)];
+                   }
+
+                
+                //calendDays[i].innerHTML = numDaysMonth[i-8];
             };
             
             //curDay[i].innerHTML = 'day';
