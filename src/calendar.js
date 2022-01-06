@@ -20,15 +20,12 @@ const calendar = () => {
 
     //выводим элемент calendar_item на страницу и добавляем в него текст
     let calendDays = [];
-    // for (let i=0; i<=38; i++) {
-    //     curDay[i] ='';
-    // }
-
+    
     //получаем текущие значения дня, месяца и года
-
     let date = new Date();
 
     let curMonth = date.getMonth(),
+        //curMonth = 1,
         curDayMonth = date.getDate(),
         curYear = date.getFullYear();
     
@@ -42,14 +39,29 @@ const calendar = () => {
         dayWeek = dateFDW.getDay();
     console.log('первый день месяца ' + daysWeek[dayWeek -1]);
     let inDayWeek = dayWeek -1; //индекс для  дня недели первого дня месяца
+
+    //определяем число дней в месяце в зависимости от високосного или обычного года
+    let allNumDays = 0;
+
+    if (!curYear%4) { //проверяем високосный год, или нет
+        allNumDays = daysMonthLY[curMonth];  //год високосный
+        //allNumDays = daysMonthLY[1];
+    } else {
+        allNumDays = daysMonthSY[curMonth];
+        //allNumDays = daysMonthSY[1];
+    }
+    console.log(allNumDays);
+
+    let indCal = (+allNumDays-1) +8; //вводим переменную для работы циклв вывода календаря, вместо 38 (7 + 31) - indCal (индекс календаря)
+    console.log(indCal);
     
     if (!ci[0]) {             // проверка наличия динамической верстки
 
         console.log(ci[0]);
 
         // for (let i=0; i<=38; i++) {
-        for (let i=0; i<=(38+inDayWeek); i++) {
-
+        // for (let i=0; i<=(38+inDayWeek); i++) {
+        for (let i=0; i<=(indCal+inDayWeek); i++) {
 
             calendDays[i] = document.createElement('div');
             calendDays[i].classList.add('calendar_item');
@@ -59,25 +71,17 @@ const calendar = () => {
             } else if(i>0 && i<=7) {
                 calendDays[i].innerHTML = daysWeek[i-1];
             } else {
-            //    if (i<8+dayWeek) {
-            //     calendDays[i].innerHTML = "";
-            //    } else {
-            //     calendDays[i].innerHTML = numDaysMonth[i-(8+dayWeek)];
-            //    }
+            
             if (i<(8+inDayWeek)) {
                     calendDays[i].innerHTML = "";
                    } else {
                     calendDays[i].innerHTML = numDaysMonth[i-(8+inDayWeek)];
                    }
 
-                
-                //calendDays[i].innerHTML = numDaysMonth[i-8];
             };
-            
-            //curDay[i].innerHTML = 'day';
+
             calendar.appendChild(calendDays[i]);
-            // console.log(i);
-            // console.log(calendDays[i]);
+
         }
       
     } // end if - проверка наличия динамической верстки
