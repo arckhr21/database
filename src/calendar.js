@@ -22,8 +22,8 @@ const calendar = () => {
         // const calendar = document.querySelector('.calendar');
         let calendar = document.querySelector('.calendar'),
         ci = document.querySelectorAll('.calendar_item');
-        console.log(calendar);
-        console.log(ci);
+        // console.log(calendar);
+        // console.log(ci);
 
         if (!ci[0]) {  // проверка наличия календаря на странице
 
@@ -36,24 +36,24 @@ const calendar = () => {
         
         //получаем текущие значения дня, месяца и года
         let date = new Date();
-        console.log(date);
+        // console.log(date);
 
         let curMonth = anyMonth,
             curYear = date.getFullYear();
-            console.log(curYear);
+            // console.log(curYear);
 
         //определяем на какой день недели приходится 1-ое число месяца
         let dateFDW = new Date(curYear, curMonth, 1),
             dayWeek = dateFDW.getDay(); // порядковый номер дня недели (0 - Вс)
         //console.log('первый день месяца ' + daysWeek[dayWeek -1]);
-        console.log('первый день месяца dayWeek = dateFDW.getDay() ' + dayWeek);
+        // console.log('первый день месяца dayWeek = dateFDW.getDay() ' + dayWeek);
 
         // корректируем месяц май, где начало с Вс (индекс - 0)
         if(!dayWeek) {
             inDayWeek = 6;
         } else {
             inDayWeek = dayWeek -1; //индекс для  дня недели первого дня месяца (-1)
-            console.log('InDayWeek =' + inDayWeek);
+            // console.log('InDayWeek =' + inDayWeek);
         }
 
         //определяем число дней в месяце в зависимости от високосного или обычного года
@@ -66,7 +66,7 @@ const calendar = () => {
             allNumDays = daysMonthSY[curMonth];
             
         }
-        console.log(allNumDays); 
+        // console.log(allNumDays); 
 
         let indCal = (+allNumDays-1) +8; //вводим переменную для работы цикла вывода календаря, вместо 38 (7 + 31) - indCal (индекс календаря)
          
@@ -97,7 +97,7 @@ const calendar = () => {
         // ========================================================================================================
 
             let elChild = document.querySelectorAll('.calendar_item');
-            console.log('дочерние элементы ' + elChild);
+            // console.log('дочерние элементы ' + elChild);
             //for (let j=0; j<=38; j++) {
             for (let j=0; j<=44; j++) {    
                 if (elChild[j]) {
@@ -120,7 +120,7 @@ const calendar = () => {
                 //определяем на какой день недели приходится 1-ое число месяца
                 let dateFDW = new Date(curYear, curMonth, 1),
                     dayWeek = dateFDW.getDay();
-                console.log('первый день месяца ' + daysWeek[dayWeek -1]);
+                // console.log('первый день месяца ' + daysWeek[dayWeek -1]);
 
 
                 // корректируем месяц май, где начало с Вс (индекс - 0)
@@ -128,7 +128,7 @@ const calendar = () => {
                     inDayWeek = 6;
                 } else {
                     inDayWeek = dayWeek -1; //индекс для  дня недели первого дня месяца (-1)
-                    console.log('InDayWeek =' + inDayWeek);
+                    // console.log('InDayWeek =' + inDayWeek);
                 }
 
                 //определяем число дней в месяце в зависимости от високосного или обычного года
@@ -141,16 +141,16 @@ const calendar = () => {
                     allNumDays = daysMonthSY[curMonth];
                     
                 }
-                console.log(allNumDays);
+                // console.log(allNumDays);
 
                 let indCal = (+allNumDays-1) +8; //вводим переменную для работы цикла вывода календаря, вместо 38 (7 + 31) - indCal (индекс календаря)
-                console.log(indCal);
+                // console.log(indCal);
         // ===================================================================================================================
         // формирование и вывод текущей таблицы календаря
         // ===================================================================================================================
  
             for (let i=0; i<=(indCal+inDayWeek); i++) {
-                console.log('проверка родителя ' + calendar);
+                // console.log('проверка родителя ' + calendar);
               
                 calendDays[i] = document.createElement('div');
                 calendDays[i].classList.add('calendar_item');
@@ -198,9 +198,8 @@ const calendar = () => {
 
                 sMonth.appendChild(optionMonth[j]);
 
-                //sMonth.selectedIndex = n;
                 sMonth.selectedIndex = numMonth;
-                // console.log(n);
+                
             } // end for
         } //end <select> and <option>
        
@@ -217,12 +216,12 @@ const calendar = () => {
 
     selMonth = addEventListener('change', function(){
         //sm = addEventListener('change', function(){
-            console.log('выбираем месяц');
+            // console.log('выбираем месяц');
            
             let selMonthNew = document.querySelector('.select_month');
-            console.log('мой месяц ' + selMonthNew.selectedIndex);
+            // console.log('мой месяц ' + selMonthNew.selectedIndex);
             n = selMonthNew.selectedIndex;
-            console.log('selMonthNew.selectedIndex = ' + n);
+            // console.log('selMonthNew.selectedIndex = ' + n);
 
             outCalendar(n);
             selectMonth(n);
@@ -230,7 +229,8 @@ const calendar = () => {
     })
  
     // =====================================================================================================================
-
+    let date = new Date;
+    n = date.getMonth();
     outCalendar(n);
     selectMonth(n);
 
